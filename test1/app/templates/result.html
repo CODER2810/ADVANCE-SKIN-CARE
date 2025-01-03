@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+</head>
+<body>
+    <h1>Prediction Result</h1>
+    <img src="{{ url_for('static', filename='images/' + image_path.split('/')[-1]) }}" alt="Uploaded Image">
+    <p>Predicted Skin Disease: {{ prediction }}</p>
+    <a href="/">Upload Another Image</a>
+</body>
+</html>
